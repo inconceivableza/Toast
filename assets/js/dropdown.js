@@ -20,7 +20,7 @@ function dropdown() {
         if (mediaQuery.matches) return;
         const submenuItems = [];
 
-        while ((nav.offsetWidth + 64) > menu.offsetWidth) {
+        while ((nav.offsetWidth + 64) > menu.offsetWidth + 300) {
             if (nav.lastElementChild) {
                 submenuItems.unshift(nav.lastElementChild);
                 nav.lastElementChild.remove();
@@ -42,7 +42,7 @@ function dropdown() {
         const wrapper = document.createElement('div');
         wrapper.setAttribute('class', 'gh-dropdown');
 
-        if (submenuItems.length >= 10) {
+        if (submenuItems.length >= 20) {
             head.classList.add('is-dropdown-mega');
             wrapper.style.gridTemplateRows = `repeat(${Math.ceil(submenuItems.length / 2)}, 1fr)`;
         } else {
