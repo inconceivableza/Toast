@@ -17,9 +17,9 @@
             </figure>
         {{/if}}
         <div class="gh-card-wrapper">
-            {{#if primary_tag}}
-                <p class="gh-card-tag">{{primary_tag.name}}</p>
-            {{/if}}
+            {{#foreach tags}}
+                <p class="gh-card-tag">{{name}}</p>
+            {{/foreach}}
             <h3 class="gh-card-title is-title">{{title}}</h3>
             {{#if custom_excerpt}}
                 <p class="gh-card-excerpt is-body">{{custom_excerpt}}</p>
