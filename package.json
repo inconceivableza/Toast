@@ -1,7 +1,6 @@
 {
-    "name": "source",
-    "description": "A default theme for the Ghost publishing platform",
-    "demo": "https://source.ghost.io",
+    "name": "toast",
+    "description": "A theme for the Ghost publishing platform, based on Source, intended for use with ghosts-toaster",
     "version": "1.5.0",
     "engines": {
         "ghost": ">=5.0.0"
