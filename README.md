@@ -8,7 +8,14 @@ Most of the information from there on is therefore about Source.
 
 The following changes have been made from the [Source theme](https://github.com/TryGhost/Source/):
 
+## Styling
+
+* *Tag Styling*: tags are styled with a light instead of font, in lowercase. All tags are shown on posts, not just the primary tag.
+* *Menu Styling*: menus are adjusted to handle more and wider items
+
 ## Bug Fixes
+
+* *Pagination fix*: a [fix to a strange pagination bug in Source](https://github.com/TryGhost/Source/pull/72).
 
 # Source
 
