@@ -29,3 +29,5 @@ changelog.md.bk
 
 # these are copied in by gulp from node_modules in the build
 assets/js/lib/
+# these are built and so best practice not to commit them
+assets/built/
