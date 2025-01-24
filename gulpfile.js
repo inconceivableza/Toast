@@ -56,6 +56,19 @@ function css(done) {
     ], handleError(done));
 }
 
+function jslibs(done) {
+    pump([
+        src([
+            'node_modules/imagesloaded/imagesloaded.pkgd.min.js',
+            'node_modules/photoswipe/dist/photoswipe.min.js',
+            'node_modules/photoswipe/dist/photoswipe-ui-default.min.js',
+            'node_modules/reframe.js/dist/reframe.min.js',
+        ]),
+        dest('assets/js/lib'),
+        livereload()
+    ], handleError(done));
+}
+
 function js(done) {
     pump([
         src([
@@ -91,7 +104,7 @@ const cssWatcher = () => watch('assets/css/**', css);
 const jsWatcher = () => watch('assets/js/**', js);
 const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs'], hbs);
 const watcher = parallel(cssWatcher, jsWatcher, hbsWatcher);
-const build = series(css, js);
+const build = series(css, jslibs, js);
 
 exports.build = build;
 exports.zip = series(build, zipper);
