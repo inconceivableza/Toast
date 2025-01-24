@@ -13,7 +13,11 @@
                 {{navigation type="secondary"}}
             </nav>
             <div class="gh-footer-copyright">
-                Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                {{#if @custom.copyright_text}}
+                    Copyright © {{@custom.copyright_text}}
+                {{else}}
+                    Copyright © {{@site.title}}
+                {{/if}}
             </div>
         </div>
 
