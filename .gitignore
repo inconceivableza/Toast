@@ -26,3 +26,6 @@ dist/
 config.json
 changelog.md
 changelog.md.bk
+
+# these are copied in by gulp from node_modules in the build
+assets/js/lib/
