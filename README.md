@@ -8,6 +8,11 @@ Most of the information from there on is therefore about Source.
 
 The following changes have been made from the [Source theme](https://github.com/TryGhost/Source/):
 
+## Technical
+
+* Browser Javascript plugins are loaded through yarn, and packaged automatically.
+  This should make adding new dependencies and keeping them up to date easier...
+
 ## Styling
 
 * *Tag Styling*: tags are styled with a light instead of font, in lowercase. All tags are shown on posts, not just the primary tag.
