@@ -208,8 +208,7 @@
             },
             "copyright_text": {
                 "type" : "text",
-                "default": "",
-                "group": "footer"
+                "default": ""
             }
         }
     },
