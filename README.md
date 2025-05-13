@@ -2,7 +2,6 @@
 
 This is a theme for [Ghost](http://github.com/tryghost/ghost/). It's based on the default [Source theme](https://github.com/TryGhost/Source/), with some changes, listed in the first section *Changes*.
 Some of these have been taken from the [fount](https://github.com/davidfraser/fount/) theme.
-Most of the information from there on is therefore about Source.
 
 # Changes
 
@@ -23,7 +22,9 @@ The following changes have been made from the [Source theme](https://github.com/
 
 * *Pagination fix*: a [fix to a strange pagination bug in Source](https://github.com/TryGhost/Source/pull/72).
 
-# Source
+# Source (original theme)
+
+_Information from here on is unaltered from the original [Source README](https://github.com/TryGhost/Source/blob/main/README.md)._
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Source! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Source/releases) page.
 
