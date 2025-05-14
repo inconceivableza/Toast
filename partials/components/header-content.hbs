@@ -71,6 +71,16 @@
             {{/if}}
         {{/match}}
 
+        {{!-- CleanLanding layout --}}
+        {{#match headerStyle "CleanLanding"}}
+            <h1 class="gh-header-title is-title">{{#if @custom.header_text}}{{@custom.header_text}}{{else}}{{@site.description}}{{/if}}</h1>
+            {{#if @site.members_enabled}}
+                {{#unless @member}}
+                    {{> "email-subscription" email_field_id="header-email"}}
+                {{/unless}}
+            {{/if}}
+        {{/match}}
+
         {{!-- Search layout --}}
         {{#match headerStyle "Search"}}
             <h1 class="gh-header-title is-title">{{#if @custom.header_text}}{{@custom.header_text}}{{else}}{{@site.description}}{{/if}}</h1>

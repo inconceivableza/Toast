@@ -133,6 +133,7 @@
                 "type": "select",
                 "options": [
                     "Landing",
+                    "CleanLanding",
                     "Highlight",
                     "Magazine",
                     "Search",
@@ -146,20 +147,20 @@
                 "type": "text",
                 "group": "homepage",
                 "description": "Defaults to site description when empty",
-                "visibility": "header_style:[Landing, Search]"
+                "visibility": "header_style:[Landing, CleanLanding, Search]"
             },
             "background_image": {
                 "type": "boolean",
                 "default": true,
                 "description": "Use the publication cover set on the Brand tab as your background",
                 "group": "homepage",
-                "visibility": "header_style:[Landing, Search]"
+                "visibility": "header_style:[Landing, CleanLanding, Search]"
             },
             "show_featured_posts": {
                 "type": "boolean",
                 "default": false,
                 "group": "homepage",
-                "visibility": "header_style:[Highlight, Magazine]"
+                "visibility": "header_style:[CleanLanding, Highlight, Magazine]"
             },
             "post_feed_style": {
                 "type": "select",

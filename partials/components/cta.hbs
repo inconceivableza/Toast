@@ -1,6 +1,7 @@
 {{#if @site.members_enabled}}
     {{#unless @member}}
         {{#match @custom.header_style "!=" "Landing"}}
+        {{#match @custom.header_style "!=" "CleanLanding"}}
         {{#match @custom.header_style "!=" "Search"}}
         {{#match @custom.header_style "!=" "Off"}}
         {{#match posts.length ">=" 7}}
@@ -17,6 +18,7 @@
                     {{> "email-subscription" email_field_id="cta-email"}}
                 </div>
             </section>
+        {{/match}}
         {{/match}}
         {{/match}}
         {{/match}}

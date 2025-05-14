@@ -9,4 +9,6 @@
 
 {{> "components/cta"}}
 
-{{> "components/post-list" feed="home" postFeedStyle=@custom.post_feed_style showTitle=true showSidebar=@custom.show_publication_info_sidebar}}
+{{#match @custom.header_style "!=" "CleanLanding"}}
+    {{> "components/post-list" feed="home" postFeedStyle=@custom.post_feed_style showTitle=true showSidebar=@custom.show_publication_info_sidebar}}
+{{/match}}
