@@ -14,6 +14,7 @@ The following changes have been made from the [Source theme](https://github.com/
 
 ## Styling
 
+* *Landing Header*: Enable the Landing header banner even if subscriptions are disabled.
 * *Tag Styling*: tags are styled with a light instead of font, in lowercase. All tags are shown on posts, not just the primary tag.
 * *Menu Styling*: menus are adjusted to handle more and wider items
 * *Copyright Notice*: rather than saying "Powered by Ghost", a customizable copyright text appears.
