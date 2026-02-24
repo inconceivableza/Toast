@@ -1,7 +1,7 @@
 {
     "name": "toast",
     "description": "A theme for the Ghost publishing platform, based on Source, intended for use with ghosts-toaster",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "engines": {
         "ghost": ">=5.0.0"
     },
